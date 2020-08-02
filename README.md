@@ -11,7 +11,7 @@
 #### 3. install dependencies:
     pip install -r requirements.txt
 #### 4. run the app:
-    python pipeline.py --input <list of repositories separted by comma>
+    python readme_word_counter.py --input <list of repositories separted by comma>
     
     example:
     python readme_word_counter.py --input octocat/hello-world,kerenle2/ReadmeWordCounter
