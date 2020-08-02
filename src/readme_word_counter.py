@@ -8,12 +8,11 @@ import os
 from past.builtins import unicode
 
 import apache_beam as beam
-from apache_beam.io import ReadFromText
 from apache_beam.io import WriteToText
 from apache_beam.options.pipeline_options import PipelineOptions
 from apache_beam.options.pipeline_options import SetupOptions
 from apache_beam.metrics import Metrics
-from git_handler import GitHandler
+from src.git_handler import GitHandler
 
 FORMAT = '%(asctime)-15s %(levelname)s  ||  %(module)-20s : %(message)s'
 LOG_FILE_NAME = 'Logs.log'
