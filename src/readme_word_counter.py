@@ -12,13 +12,13 @@ from apache_beam.io import WriteToText
 from apache_beam.options.pipeline_options import PipelineOptions
 from apache_beam.options.pipeline_options import SetupOptions
 from apache_beam.metrics import Metrics
-from src.git_handler import GitHandler
+from git_handler import GitHandler
 
 FORMAT = '%(asctime)-15s %(levelname)s  ||  %(module)-20s : %(message)s'
 LOG_FILE_NAME = 'Logs.log'
 CURRENT_PATH = os.path.dirname(os.path.abspath(__file__))
-LOG_PATH = os.path.join(CURRENT_PATH, "logs", LOG_FILE_NAME)
-OUTPUT_PATH = os.path.join(CURRENT_PATH, 'archive', 'output')
+LOG_PATH = os.path.join(CURRENT_PATH, "..", "logs", LOG_FILE_NAME)
+OUTPUT_PATH = os.path.join(CURRENT_PATH, "..", 'archive', 'output')
 logging.basicConfig(filename=LOG_PATH, format=FORMAT, level=logging.INFO)
 
 
