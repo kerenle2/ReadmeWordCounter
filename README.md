@@ -14,7 +14,7 @@
     python pipeline.py --input <list of repositories separted by comma>
     
     example:
-    python pipeline.py --input octocat/hello-world,kerenle2/ReadmeWordCounter
+    python readme_word_counter.py --input octocat/hello-world,kerenle2/ReadmeWordCounter
     
 #### 5. check the output file in "archive" dir and the logs in "logs" dir.
     
